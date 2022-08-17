@@ -15,11 +15,11 @@
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
-  --notion-max-width: 900px;
+  --notion-max-width: 1000px;
 }
 
 .index-page {
-  --notion-max-width: 900px;
+  --notion-max-width: 1000px;
 }
 
 .tags-page .notion-collection-header {
