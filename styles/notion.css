@@ -18,6 +18,10 @@
   --notion-max-width: 900px;
 }
 
+.index-page {
+  --notion-max-width: 900px;
+}
+
 .tags-page .notion-collection-header {
   display: none;
 }
