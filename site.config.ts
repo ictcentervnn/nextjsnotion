@@ -9,12 +9,12 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'ICTcenter - Blog Chia Sẻ Kiến Thức Tin Học',
+  name: 'ICTcenter - Dịch Vụ',
   domain: 'ictcenter.xyz',
   author: 'ictcenter',
 
   // open graph metadata (optional)
-  description: 'ICTcenter - Blog Chia Sẻ Kiến Thức Tin Học',
+  description: 'ICTcenter - Dịch Vụ',
 
   // social usernames (optional)
   twitter: '#',
