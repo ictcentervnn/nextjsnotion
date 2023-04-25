@@ -17,7 +17,7 @@ export default siteConfig({
   description: 'ICTcenter - Dịch Vụ',
 
   // social usernames (optional)
-  twitter: '@NhanRio1',
+  twitter: 'NhanRio1',
   github: 'ictcentervnn',
   //linkedin: '#',
   newsletter: '#', // optional newsletter URL

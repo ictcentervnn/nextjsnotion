@@ -7,7 +7,11 @@
   "repository": "transitive-bullshit/nextjs-notion-starter-kit",
   "license": "MIT",
   "engines": {
+<<<<<<< HEAD
     "node": ">=16"
+=======
+    "node": ">=16.16"
+>>>>>>> e681385f6cc6f5204f7f10ee743a0a1679f7b389
   },
   "scripts": {
     "dev": "next dev",
