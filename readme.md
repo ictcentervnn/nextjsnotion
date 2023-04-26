@@ -1,18 +1,7 @@
-<p align="center">
-  <a href="https://transitivebullsh.it/nextjs-notion-starter-kit">
-    <img alt="Example article page" src="https://user-images.githubusercontent.com/552829/160132094-12875e09-41ec-450a-80fc-ae8cd488129d.jpg" width="689">
-  </a>
-</p>
-
-# Next.js Notion Starter Kit
-
-> The perfect starter kit for building websites with Next.js and Notion.
-
-[![Build Status](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/actions/workflows/build.yml/badge.svg)](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/actions/workflows/build.yml) [![Prettier Code Formatting](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io)
 
 ## Intro
 
-This repo is what I use to power my personal blog and portfolio site [transitivebullsh.it](https://transitivebullsh.it).
+This repo is what I use to power my personal blog and portfolio site [en.ictcenter.xyz](https://en.ictcenter.xyz).
 
 It uses Notion as a CMS, [react-notion-x](https://github.com/NotionX/react-notion-x), [Next.js](https://nextjs.org/), and [Vercel](https://vercel.com).
 
@@ -33,8 +22,7 @@ It uses Notion as a CMS, [react-notion-x](https://github.com/NotionX/react-notio
 
 ## Demos
 
-- [Default demo](https://nextjs-notion-starter-kit.transitivebullsh.it) - Deployed from the `main` branch
-- [My site](https://transitivebullsh.it) - Deployed from the `transitive-bullshit` branch
+- [My site](https://en.ictcenter.xyz) - Deployed from the `main` branch
 
 ## Setup
 
@@ -50,9 +38,9 @@ This project requires a recent version of Node.js (we recommend >= 16).
 
 I tried to make configuration as easy as possible — All you really need to do to get started is edit `rootNotionPageId`.
 
-We recommend duplicating the [default page](https://notion.so/7875426197cf461698809def95960ebf) as a starting point, but you can use any public notion page you want.
+We recommend duplicating the [default page](https://notion.so/10f45248f91944a38e9016cac597b87b) as a starting point, but you can use any public notion page you want.
 
-Make sure your root Notion page is **public** and then copy the link to your clipboard. Extract the last part of the URL that looks like `7875426197cf461698809def95960ebf`, which is your page's Notion ID.
+Make sure your root Notion page is **public** and then copy the link to your clipboard. Extract the last part of the URL that looks like `10f45248f91944a38e9016cac597b87b`, which is your page's Notion ID.
 
 In order to find your Notion workspace ID (optional), just load any of your site's pages into your browser and open up the developer console. There will be a global variable that you can access called `block` which is the Notion data for the current page. If you enter `block.space_id`, it will print out your page's workspace ID.
 
@@ -62,9 +50,9 @@ I recommend setting up a collection on your home page that contains all of your 
 
 The app defaults to slightly different URL paths in dev vs prod (though pasting any dev pathname into prod will work and vice-versa).
 
-In development, it will use `/nextjs-notion-blog-d1b5dcf8b9ff425b8aef5ce6f0730202` which is a slugified version of the page's title suffixed with its Notion ID. I've found that it's really useful to always have the Notion Page ID front and center during local development.
+In development, it will use `/ICTcenter-IT-Systems-Sharing-10f45248f91944a38e9016cac597b87b` which is a slugified version of the page's title suffixed with its Notion ID. I've found that it's really useful to always have the Notion Page ID front and center during local development.
 
-In production, it will use `/nextjs-notion-blog` which is a bit nicer as it gets rid of the extra ID clutter.
+In production, it will use `/ICTcenter-IT-Systems-Sharing` which is a bit nicer as it gets rid of the extra ID clutter.
 
 The mapping of Notion ID to slugified page titles is done automatically as part of the build process. Just keep in mind that if you plan on changing page titles over time, you probably want to make sure old links will still work, and we don't currently provide a solution for detecting old links aside from Next.js's built-in [support for redirects](https://nextjs.org/docs/api-reference/next.config.js/redirects).
 
@@ -112,12 +100,6 @@ Every notion block gets its own unique classname, so you can target individual b
 ```
 
 ## Dark Mode
-
-<p align="center">
-  <img alt="Light Mode" src="https://transitive-bs.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F83ea9f0f-4761-4c0b-b53e-1913627975fc%2Ftransitivebullsh.it_-opt.jpg?table=block&id=ed7e8f60-c6d1-449e-840b-5c7762505c44&spaceId=fde5ac74-eea3-4527-8f00-4482710e1af3&width=2000&userId=&cache=v2" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark Mode" src="https://transitive-bs.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc0839d6c-7141-48df-8afd-69b27fed84aa%2Ftransitivebullsh.it__(1)-opt.jpg?table=block&id=23b11fe5-d6df-422d-9674-39cf7f547523&spaceId=fde5ac74-eea3-4527-8f00-4482710e1af3&width=2000&userId=&cache=v2" width="45%">
-</p>
 
 Dark mode is fully supported and can be toggled via the sun / moon icon in the footer.
 
