@@ -105,10 +105,6 @@ Dark mode is fully supported and can be toggled via the sun / moon icon in the f
 
 ## Automatic Social Images
 
-<p align="center">
-  <img alt="Example social image" src="https://user-images.githubusercontent.com/552829/162001133-34d4cf24-123a-4569-a540-f683b22830d1.jpeg" width="600">
-</p>
-
 All Open Graph and social meta tags are generated from your Notion content, which makes social sharing look professional by default.
 
 Social images are generated automatically using [Vercel OG Image Generation](https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation). You can tweak the default React template for social images by editing [api/social-images.tsx](./pages/api/social-image.tsx).
@@ -128,10 +124,6 @@ If a page has less than `minTableOfContentsItems` (default 3), the table of cont
 This table of contents uses the same logic that Notion uses for its built-in Table of Contents block (see [getPageTableOfContents](https://github.com/NotionX/react-notion-x/blob/master/packages/notion-utils/src/get-page-table-of-contents.ts) for the underlying logic).
 
 ## Responsive
-
-<p align="center">
-  <img alt="Mobile article page" src="https://user-images.githubusercontent.com/552829/160132983-c2dd5830-80b3-4a0e-a8f1-abab5dbeed11.jpg" width="300">
-</p>
 
 All pages are designed to be responsive across common device sizes.
 
